@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        body {
+            background-color: #1b1c31;
+            color: white;
+           
+        }
+    
+        header{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 95vw;    
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            width: 37vw;
+            margin: 30px 0 30px 450px;
+        }
+        a{
+            color:white;
+        }
+        .type{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:1vw;
+            margin:2vw 30vw;
+        }
+        hr{
+            width:39%;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: column;
+            width: 37vw;
+            margin: 30px 0 30px 450px;
+        }
+
+        button{
+            width: 14vw;
+            height: 2vw;
+            align-items: center;
+            margin-left: 40vw;
+            background-color: #711794be;
+            color: white;
+            border: 2px solid white;
+        }
+        input ,textarea {
+            background-color: #0B0B23;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Registration Form </h1>
+        <h3>Please fill out this form with the required information</h3>
+    </header>
+    
+    <div class="name">
+        <label>Enter Your First Name: </label><br>
+        <input type="text" required;">
+        <label>Enter Your Last Name: </label><br>
+        <input type="text" required><br>
+        <label>Enter Your Email: </label><br>
+        <input type="email" required><br>
+        <label>Create a New Password: </label><br>
+        <input type="password" required>
+    </div>
+          <hr>
+    <div class="type">
+        <div class="radiotype"><input type="radio" name="Personal_Account" id="Personal_Account">Personal Account</div>
+        <div class="radiotype"><input type="radio" name="Business_Account" id="Business_Account">Business Account</div>
+         <div class="radiotype"><input type="checkbox" name="I accept " id="I accept">  I accept the <a href="terms and conditions">terms and conditions</a></div></div>
+    </div>
+           <hr>
+     <div class="profile">
+        <label>Upload a profile picture:</label><br>
+        <input type="file" name="Profile picture" id="Profile picture"><br>
+        <label>Input your age (years):</label><br>
+        <input type="number" name="age" id="age"><br>
+        <label>How did you hear about us?</label><br>
+        <select name="heard" id="heard">
+            <option value="select one">select one</option>
+            <option value="facebook">facebook</option>
+            <option value="Newspaper">Newspaper</option>
+            <option value="Freind">Freind</option>
+            <option value="others">others</option>
+        </select><br>
+        <label>Provide a bio:</label><br>
+        <textarea name="bio" id="bio" cols="50" rows="2" placeholder="I like coding on the beach...s"></textarea><br>
+     </div>      
+     <button>Submit</button> 
+</body>
+</html>
